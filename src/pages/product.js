@@ -1,8 +1,8 @@
 import React from "react";
 import { WebView } from "react-native";
 
-const Product = ({navigation}) => (
-  <WebView source={{uri: navigation.state.params.product.url}} />
+const Product = ({ navigation }) => (
+  <WebView source={{ uri: navigation.state.params.product.url }} />
 );
 
 Product.navigationOptions = ({ navigation }) => ({

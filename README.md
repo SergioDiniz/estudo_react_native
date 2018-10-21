@@ -1,6 +1,9 @@
 **Estudando o básico de react native**
 
-## Anotações
+### Print do App
+<img src="print_app.png?raw=true" width="400" alt="Imagem do App">
+
+# Anotações
 
 Para executar o app:
 * Iniciar o emulador android
