@@ -12,7 +12,11 @@ import api from "../services/api";
 export default class Main extends Component {
   // para mudar o titulo default
   static navigationOptions = {
-    title: "Listagem de produtos"
+    title: "Listagem de produtos",
+    headerTitleStyle: { // para centralizar o titulo 
+      textAlign: "center",
+      flex: 1
+    }
   };
 
   state = {
@@ -34,7 +38,7 @@ export default class Main extends Component {
       page
     });
   };
-  
+
   loadMore = () => {
     const { page, productInfo } = this.state;
     if (page === productInfo.pages) return;
@@ -51,7 +55,7 @@ export default class Main extends Component {
         <TouchableOpacity
           style={style.productButton}
           onPress={() => {
-            console.log(`Clicou em ${item.title}`);
+            this.props.navigation.navigate("Product", { product: item });
           }}
         >
           <Text style={style.productButtonTitle}>Acessar</Text>
@@ -59,7 +63,6 @@ export default class Main extends Component {
       </View>
     );
   };
-
 
   render() {
     return (
