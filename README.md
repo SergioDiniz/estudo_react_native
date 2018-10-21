@@ -29,6 +29,14 @@ ou
 
 `Em caso de emulador transparente, editar configurações e mudar GRAPHICS para Software `
 
-### Comando no Emulador
+### Comandos no Emulador
 * R+R:  Para atualizar
 * CTRL + M: Abrir menu DEV
+
+### Instalado
+* Chocolatey
+* Npm
+* Yarn
+* react-native-cli
+* Android
+* Java
