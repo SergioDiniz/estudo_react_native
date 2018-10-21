@@ -1,6 +1,17 @@
 **Estudando o básico de react native**
 
 ## Anotações
+
+Para executar o app:
+* Iniciar o emulador android
+> emulator @nome-do-emulador
+
+* Executar android app na raiz do projeto
+
+> react-native run-android
+
+
+### Configurações
 * Adicionar variáveis de ambiente do android
 ```
 ANDROID_HOME=~/Library/Android/sdk/
@@ -15,7 +26,7 @@ PATH=$PATH:~/android-sdks/tools/
 
 
 
-### Usando na linha de comando
+### Usando emulador na linha de comando
 * listando os emuladores
 > $ emulator -list-avds
 
@@ -32,6 +43,17 @@ ou
 ### Comandos no Emulador
 * R+R:  Para atualizar
 * CTRL + M: Abrir menu DEV
+
+### Modo debug
+* Ativar modo debug no console do davegador
+> CTRL + M => Debug JS Remotely
+
+
+* Resolvendo problemas de timeout
+    * CTRL + M na tela do emulador
+    * Escolher Dev settings > Debug server host & port for device
+    * Setar localhost:8081
+    * Executar novamente android app: react-native run-android
 
 ### Instalado
 * Chocolatey
